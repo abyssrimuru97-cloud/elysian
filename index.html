@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Élysian | Premium Fine Dining</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="logo">
+        Élysian
+    </div>
+
+    <nav class="navbar">
+
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#chef">Chef</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#reservation">Reservation</a>
+        <a href="#contact">Contact</a>
+
+        <a href="login.html">Login</a>
+        <a href="signup.html">Sign Up</a>
+
+    </nav>
+
+    <div class="nav-icons">
+
+        <i class="fas fa-search" id="searchBtn"></i>
+        <i class="fas fa-shopping-cart" id="cartBtn"></i>
+
+    </div>
+
+</header>
+
+<section class="hero" id="home">
+
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+
+        <h1>Luxury Fine Dining Experience</h1>
+
+        <p>
+            Every dish is crafted with passion, elegance,
+            and unforgettable taste.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#menu" class="btn">
+                Explore Menu
+            </a>
+
+            <a href="#reservation" class="btn secondary">
+                Reserve Table
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="about" id="about">
+
+    <div class="about-image">
+
+        <img src="about.jpg" alt="Restaurant">
+
+    </div>
+
+    <div class="about-content">
+
+        <h2>About Us</h2>
+
+        <p>
+            Welcome to Élysian, where premium ingredients,
+            master chefs, and elegant ambience come together
+            to create an unforgettable dining experience.
+        </p>
+
+        <div class="features">
+
+            <div class="feature">
+                <i class="fas fa-award"></i>
+                <h3>Michelin Inspired</h3>
+            </div>
+
+            <div class="feature">
+                <i class="fas fa-utensils"></i>
+                <h3>Signature Dishes</h3>
+            </div>
+
+            <div class="feature">
+                <i class="fas fa-wine-glass"></i>
+                <h3>Premium Drinks</h3>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- CHEF SECTION -->
+
+<section class="chef" id="chef">
+
+    <div class="chef-content">
+
+        <span>Master Chef</span>
+
+        <h2>Meet Our Executive Chef</h2>
+
+        <p>
+            Our award-winning chef combines modern techniques with traditional
+            recipes to create unforgettable dishes prepared using the finest
+            ingredients from around the world.
+        </p>
+
+        <a href="#menu" class="btn">View Signature Menu</a>
+
+    </div>
+
+    <div class="chef-image">
+
+        <img src="chef.jpg" alt="Chef">
+
+    </div>
+
+</section>
+
+<!-- MENU -->
+
+<section class="menu" id="menu">
+
+    <div class="section-title">
+
+        <span>Our Menu</span>
+
+        <h2>Chef's Signature Dishes</h2>
+
+    </div>
+
+    <div class="search-box">
+
+        <input type="text"
+               id="searchInput"
+               placeholder="Search your favourite dish...">
+
+    </div>
+
+    <div class="category-buttons">
+
+        <button class="active">All</button>
+        <button>Starter</button>
+        <button>Main Course</button>
+        <button>Dessert</button>
+        <button>Drinks</button>
+
+    </div>
+
+    <div class="menu-container">
+
+        <!-- JavaScript will create menu cards here -->
+
+    </div>
+
+</section>
+
+<!-- CART -->
+
+<div class="cart">
+
+    <div class="cart-header">
+
+        <h2>Your Cart</h2>
+
+        <i class="fas fa-times" id="closeCart"></i>
+
+    </div>
+
+    <div id="cartItems"></div>
+
+    <div class="cart-footer">
+
+        <h3>Total: <span id="total">$0.00</span></h3>
+
+        <button id="checkoutBtn">
+            Proceed to Checkout
+        </button>
+
+    </div>
+
+</div>
+<!-- CHECKOUT -->
+
+<section class="checkout hidden" id="checkout">
+
+    <div class="section-title">
+        <span>Checkout</span>
+        <h2>Complete Your Order</h2>
+    </div>
+
+    <form id="checkoutForm">
+
+        <input type="text" placeholder="Full Name" required>
+
+        <input type="email" placeholder="Email Address" required>
+
+        <input type="tel" placeholder="Phone Number" required>
+
+        <textarea placeholder="Delivery Address" required></textarea>
+
+        <button type="submit" class="btn">
+            Pay Now (Demo)
+        </button>
+
+    </form>
+
+</section>
+
+<!-- GALLERY -->
+
+<section class="gallery" id="gallery">
+
+    <div class="section-title">
+
+        <span>Gallery</span>
+
+        <h2>Inside Élysian</h2>
+
+    </div>
+
+    <div class="gallery-grid">
+
+        <img src="gallery1.jpg" alt="">
+        <img src="gallery2.jpg" alt="">
+        <img src="gallery3.jpg" alt="">
+        <img src="gallery4.jpg" alt="">
+        <img src="gallery5.jpg" alt="">
+        <img src="gallery6.jpg" alt="">
+
+    </div>
+
+</section>
+
+<!-- RESERVATION -->
+
+<section class="reservation" id="reservation">
+
+    <div class="section-title">
+
+        <span>Book Now</span>
+
+        <h2>Reserve Your Table</h2>
+
+    </div>
+
+    <form id="reservationForm">
+
+        <input type="text" placeholder="Your Name" required>
+
+        <input type="email" placeholder="Email" required>
+
+        <input type="date" required>
+
+        <input type="time" required>
+
+        <input type="number" min="1" max="20"
+               placeholder="Guests" required>
+
+        <button type="submit" class="btn">
+            Reserve Table
+        </button>
+
+    </form>
+
+</section>
+
+<!-- REVIEWS -->
+
+<section class="reviews">
+
+    <div class="section-title">
+
+        <span>Testimonials</span>
+
+        <h2>What Our Guests Say</h2>
+
+    </div>
+
+    <div class="review-container">
+
+        <div class="review-card">
+
+            <h3>⭐⭐⭐⭐⭐</h3>
+
+            <p>
+                Amazing food and luxury ambience.
+                Definitely coming back.
+            </p>
+
+            <h4>— James</h4>
+
+        </div>
+
+        <div class="review-card">
+
+            <h3>⭐⭐⭐⭐⭐</h3>
+
+            <p>
+                Best fine dining experience I've ever had.
+            </p>
+
+            <h4>— Sophia</h4>
+
+        </div>
+
+        <div class="review-card">
+
+            <h3>⭐⭐⭐⭐⭐</h3>
+
+            <p>
+                Outstanding service and delicious dishes.
+            </p>
+
+            <h4>— Daniel</h4>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer id="contact">
+
+    <h2>Élysian Restaurant</h2>
+
+    <p>Luxury Fine Dining Experience</p>
+
+    <p>Email: info@elysian.com</p>
+
+    <p>Phone: +1 123 456 7890</p>
+
+    <p>Open Daily: 10:00 AM – 11:00 PM</p>
+
+    <div class="socials">
+
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-x-twitter"></i>
+        <i class="fab fa-youtube"></i>
+
+    </div>
+
+</footer>
+
+<!-- SUCCESS POPUP -->
+
+<div class="success hidden" id="successPopup">
+
+    <i class="fas fa-circle-check"></i>
+
+    <h2>Payment Successful</h2>
+
+    <p>Your order has been placed successfully.</p>
+
+    <button id="continueBtn" class="btn">
+        Continue
+    </button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
